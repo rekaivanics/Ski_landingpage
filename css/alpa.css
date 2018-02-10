@@ -1,0 +1,376 @@
+
+body {
+  background-color: #fdffff;
+}
+section {
+  clear: both;
+  font-family: 'Open Sans';
+  line-height: 1.4;
+}
+ul {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: #124780; */
+  display: flex;
+  justify-content: flex-end;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: white;
+    color: #124780;
+}
+.center-box {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.align-center {
+  text-align: center;
+}
+.row {
+  margin: 0 -20px;
+  clear: both;
+}
+.one-half {
+    float: left;
+    min-height: 1px;
+    padding: 0 20px;
+    margin: 10px;
+    width: 47%;
+}
+.one-third {
+    float: left;
+    min-height: 1px;
+    padding: 0 20px;
+    margin: 10px;
+    width: 30%;
+}
+h1 {
+  font-family: 'Archivo Black';
+  font-size: 38px;
+}
+h2 {
+  font-family: 'Archivo Black';
+  font-size: 30px;
+  color: #0C2632;
+  padding: 30px 0;
+  position: relative;
+}
+h2::after { /*zöld vonalka alatta*/
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 180px;
+  background: #124780;
+  bottom: 0;
+  left: 50%;
+  margin-left: -90px /*140 fele*/
+}
+h3 {
+  font-family: 'Open Sans';
+  font-size: 24px;
+  padding: 15px 0;
+  font-weight: bold;
+}
+p {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  padding-top: 20px;
+  color: #0C2632;
+
+}
+
+#header .center-box {
+  width: 960px;
+}
+nav {
+  position: absolute;
+  top: 0;
+  right: 23%;
+}
+#header {
+  background: url(../img/header_back.jpg) top center;
+  background-size: cover;
+  min-height: 600px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 80px 0;
+  position: relative;
+}
+.btn {
+  display: inline-block;
+  font-family: 'Open Sans';
+  padding: 10px 15px;
+  margin: 20px;
+  color: #124780;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 10%;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  background: #124780;
+  color: white;
+  border: 1px solid white;
+}
+.header-text {
+
+}
+#header p {
+  width: 50%; /*a div 50%-t foglalja el*/
+  font-size: 22px;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#header::after {
+  background: url(../img/snow.png) top center repeat-x; /*hó textúra a kép alatt*/
+  content: "";
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+#describe p {
+  padding: 30px;
+}
+/* forgatós képek */
+.diagonal {
+  margin: 20px auto;
+  transform: rotate(45deg);
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+}
+.diagonal img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.diagonal-content {
+  border: solid 10px #D1E0E5;
+  width: 70.71%;
+  height: 70.71%;
+  position: absolute;
+  top: 14.65%;
+  left: 14.65%;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 3px 2px 0px rgba(48, 41, 37, 0.42);
+  -moz-box-shadow:    4px 3px 2px 0px rgba(48, 41, 37, 0.42);
+  box-shadow:         4px 3px 2px 0px rgba(48, 41, 37, 0.42);
+}
+.diagonal-content-img {
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -21.72%;
+  left: -21.72%;
+}
+#second-image {
+  padding: 0 0 80px 0;
+  position: relative;
+}
+#second-image::after {
+  background: url(../img/snow.png) top center repeat-x; /*hó textúra a kép alatt*/
+  content: "";
+  height: 100px;
+  width: 100%;
+  bottom: 50px;
+  left: 0;
+  position: absolute;
+}
+ .large-image {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+}
+.large-image img {
+  width: 100%;
+  display: block;
+}
+#booking {
+  padding: 0 0 80px 0;
+
+}
+#booking p {
+    padding: 30px;
+
+}
+.container {
+  margin: 1.6rem auto;
+  max-width: 76rem;
+  text-align: center;
+}
+.cal__header button {
+  background: none;
+  border: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+}
+
+.cal button:active {
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(10, 146, 151, 0.1)
+}
+
+.cal {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #e7e9ed;
+}
+
+.cal__header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.cal__header svg {
+  fill: #124780;
+}
+
+.cal__header__label {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cal__week {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #E7E9ED;
+}
+
+.cal__week span {
+  font-size: 1.2rem;
+  max-width: 14.28%;
+  flex: 0 0 14.28%;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cal__body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  justify-content: center;
+}
+
+.cal__date {
+  background-color: #fff;
+  display: flex;
+  max-width: 14.28%;
+  flex: 0 0 14.28%;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cal__date--active:hover {
+  cursor: pointer;
+}
+
+.cal__date--today {
+  background-color: #124780;
+  color: #fff;
+}
+
+.cal__date--selected {
+  background-color: #E7E9ED;
+  color: #333;
+}
+
+.cal__date--disabled {
+  opacity: 0.5;
+}
+
+.cal__date--disabled:hover {
+  cursor: not-allowed;
+}
+
+.demo-picked {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.demo-picked span {
+  font-weight: bold;
+}
+#services {
+  background-color: #124780;
+  color: white;
+  text-align: center;
+}
+.small {
+  height: 30px;
+  width: 30px;
+}
+#services p {
+  color: white;
+  padding: 0 15px;
+}
+#services h2 {
+  color: white;
+}
+footer {
+  clear: both;
+  background-color: #124780;
+  text-align: center;
+  padding: 15px;
+}
+footer p, footer a {
+  color: white;
+}
+/*képernyő beállítások*/
+@media only screen and (max-width: 960px) {
+  .center-box {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .one-half, .one-third {
+      float: none;
+      width: 100%;
+  }
+  h1 {font-size: 30px;}
+  h2 {font-size: 28px;}
+  p {font-size: 16px; }
+  #header p {font-size: 20px; width: 100%;}
+  nav {right: 0;}
+}
+@media only screen and (max-width: 360px) {
+  nav a {font-size: 16px; padding: 5px;}
+  .container {
+    display: none;
+  }
+}
